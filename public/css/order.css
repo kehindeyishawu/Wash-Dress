@@ -1,0 +1,118 @@
+a.navbar-brand img {
+    width: 40px;
+}
+
+#order-form{
+    width: 70%;
+    margin: auto;
+}
+
+
+/*Codepen*/
+/*Quote Styling*/
+#quote-calc .total { font-size: 24px; }
+#quote-calc .quote-calc { 
+	background-color: #EFEFEF; 
+	padding: 20px; 
+	border-radius: 10px;  
+	margin-left: auto; 
+	margin-right: auto;}
+
+#quote-calc .quote-col { 
+	margin-top: 10px; 
+	margin-bottom: 30px;}
+#quote-calc .quote {
+	border: 2px solid #FF3B3F; 
+	border-radius: 10px; 
+	padding: 20px 10px 20px 10px; 
+	text-align: center; 
+	background-color: #FFF; }
+#quote-calc .quote-col a { display: block; margin-top: 20px; text-align: center;}
+#quote-calc .form-control {margin-top: 20px;}
+
+/* row often */
+#quote-calc .row-often .col-occur { 
+	border-radius: 10px; 
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	border: 2px solid transparent; 
+	margin: 15px auto; }
+#quote-calc .row-often .col-occur img { width: 100%; 
+	max-width: 120px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	display: block; }
+#quote-calc .row-often  { margin-top: 20px;}
+#quote-calc .row-often  .on { border: 2px solid #FF3B3F;  background-color: #FFF; }
+#quote-calc .row-often .on .disc { color: #FF3B3F; }
+#quote-calc .row-often .form-group, .row-extras #quote-calc .form-group, .row-extras { margin-top: 20px;}
+#quote-calc .row-often .disc { margin-top: 5px; text-align: center;}
+
+/* extras */
+#quote-calc .row-extras { /*margin-top: 50px;*/}
+#quote-calc .row-extras .col-sm-12 { 
+	margin-bottom: 30px;}
+#quote-calc .row-extras .extra-container { 
+	background-color: #FFF; 
+	border: 2px solid #545454; 
+	border-radius: 10px; 
+	padding: 30px 15px;
+	margin: 15px auto;
+	min-height: 150px; 
+ }
+#quote-calc .row-extras img {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 100%; 
+	max-width: 38px; }
+#quote-calc .row-extras .extra-name { 
+	margin-top: 10px; 
+	text-align: center;
+	}
+#quote-calc .row-extras .extra-price { 
+	margin-top: 10px; 
+	text-align: center;
+	}
+#quote-calc .row-extras .on { 
+	border: 2px solid #FF3B3F;  
+	background-color: #FFF; }
+#quote-calc .row-extras .on .extra-name { 
+	color: #FF3B3F; }
+
+/* code that will be redundant after publishing */
+.quote a {border: 2px solid #FF3B3F; border-radius: 10px; padding: 10px 30px; font-size: 22px; text-decoration: none; color: #FFF; background-color: #FF3B3F; }
+.quote a:hover { background-color: transparent; color: #FF3B3F; }
+/*.quote-calc { max-width: 50%; }*/
+h3 { text-align: center; }
+
+/*For appending*/
+.btn{
+	color: white;
+	padding: 0px 63px;
+}
+.btn-add{
+	background-color: rgb(12, 187, 50);
+}
+.btn-remove{
+	background-color: rgb(187, 12, 12);
+}
+ul{
+	display: felx;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+li{
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border: 1px solid rgb(160, 155, 155);
+	border-top-left-radius: 5rem;
+	border-top-right-radius: 5rem;
+	border-bottom-left-radius: 5rem;
+	border-bottom-right-radius: 5rem;
+}

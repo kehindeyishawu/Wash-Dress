@@ -1,0 +1,25 @@
+{
+  "name": "e-laundromart",
+  "version": "1.0.0",
+  "description": "An e-laudry service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuduCE/e-laundromart.git"
+  },
+  "author": "ENT 302 - Group 5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuduCE/e-laundromart/issues"
+  },
+  "homepage": "https://github.com/BuduCE/e-laundromart#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}

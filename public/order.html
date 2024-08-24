@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/order.css">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+
+    <title>Place Order</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/nav logo.png" alt="">
+          </a>
+          <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item active  mr-3">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item  mr-3">
+                <a class="nav-link scroll" href="index.html#about">about</a>
+              </li>
+              <li class="nav-item dropdown mr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                  Navigate
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item scroll" href="index.html#services">Services</a>
+                  <a class="dropdown-item scroll" href="index.html#gallery">Gallery</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item scroll" href="index.html#testimonials">Testimonials</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="index.html#contact">contact</a>
+              </li>
+            </ul>
+            <a href="./order.html">
+              <button type="button" class="btn btn-info btn-lg-block glls-btn px-4 text-uppercase font-weight-bold">
+						      order
+					    </button>
+            </a>
+  
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="mb-5">
+      
+      <form action="/order" method="POST" class="mt-5" id="order-form">
+        <h1 class="text-center">Place Your Order</h1>
+
+
+
+
+
+        <!--Codepen-->
+        <!-- <div class="col-sm-12 quote-calc col-xs-12" id="quote-calc">
+          <h3 class="mb-4">Laundry Calculator</h3>
+          <div class="col-sm-6">
+
+            <div class="form-group">
+              <h4>Clothes (please select):</h4>
+              <select class="form-control" id="beds"  id="candidate">
+                <option onclick="newElement()">Choose Wear</option>
+                <option value="150" name="shirt">Shirt</option>
+                <option value="200" name="Plain material Trouser">Plain material Trouser</option>
+                <option value="250" name="Jacket">Jacket</option>
+                <option  value="150" name="Short">Short</option>
+                <option  value="150" name="Socks">Socks</option>
+                <option  value="200" name="Jean Trouser">Jean Trouser</option>
+              </select>
+
+              <div class="input-group-append">
+                <button onclick="addItem()" class="btn btn-add" type="button">Add Item</button>
+                <button onclick="removeItem()" class="btn btn-remove" type="button">Remove Item</button>
+              </div>
+            </div>
+          </div> -->
+
+          <!--div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="row-extras">
+              <h5>Do you want to add any Extras?</h5>
+              <h6>(Click a tile to add it to your estimate)</h6>
+              <div class="form-group row" id="extras">		
+                
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="extra-container" id="move-col">
+                      <!--img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/move-off.png" title="move" id="move"/->
+                      <div class="extra-name">Remove Stain</div>
+                      <div class="extra-price">₦150</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="extra-container" id="fridge-col">
+                      <!--img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/fridge-off.png" title="fridge" id="fridge"/->
+                      <div class="extra-name">Fold</div>
+                      <div class="extra-price">₦50</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="extra-container" id="oven-col">
+                      <!--img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/oven-off.png" title="oven" id="oven"/->
+                      <div class="extra-name">Stash & Iron</div>
+                      <div class="extra-price">₦150</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-sm-offset-2 col-xs-6">
+                    <div class="extra-container" id="dish-col">
+                      <!--img src="https://www.moplovers.com.au/wp-content/uploads/2017/02/dish-off.png" title="dish" id="dish"/->
+                      <div class="extra-name">Iron</div>
+                      <div class="extra-price">₦29</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div-->
+        </div>
+
+        <ul id="dynamic-list">
+          
+        </ul>
+
+        <!-- <div id="quote-calc">
+          <div class="col-sm-12 col-xs-12 clearfix quote-col ">
+            <div class="quote">
+              <h2>Your Estimate:</h2>
+              <span class="total" id="total">
+                ₦0.00
+              </span>
+              <a href="/book" title="Book Now" data-options="thumbnail: ''">BOOK NOW</a>
+              <small>A charge of N500 is added for delivery & Pickup</small>
+            </div>
+          </div> 
+        </div> -->
+        <h4>A charge of N500 is added for delivery & Pickup</h4>
+
+
+
+        <!--select class="custom-select mb-4 mt-5">
+          <option class="order-item" selected>Select Your Garment</option>
+          <option class="order-item" value="shirt">Shirt</option>
+          <option class="order-item" value="2">Trousers</option>
+          <option class="order-item" value="3">Jacket</option>
+        </select>
+        <div class="mt-3 mb-5 order-box">
+          <div>
+            <input type="text" value="cloth">
+          </div>
+        </div-->
+
+        <div class="form-group">
+          <label for="fullname"> Fullname </label>
+            <textarea name="fullname" id="fullname" class="form-control" cols="30" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="pickup-address"> Pickup Address: (Locations are only within LASU campus and down to Igando axis.) </label>
+            <textarea name="pickupAddress" id="pickup-address" class="form-control" cols="30" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="delivery"> Delivery Address: (Locations are only within LASU campus and down to Igando axis.) </label>
+            <textarea name="deliveryAddress" id="delivery" class="form-control" cols="30" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="customer-email">Email</label>
+          <input type="email" class="form-control" id="customer-email" name="customerEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="customer-phone-number">Phone NO</label>
+          <input type="number" class="form-control" id="customer-phone-number" name="customerPhoneNumber" required>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <div class="col-md-4">
+              <b style="font-size: 30px;">Total: <span id="estimate"></span></b>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-success btn-lg ml-auto">Confirm & Book</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/order.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  </body>
+</html>

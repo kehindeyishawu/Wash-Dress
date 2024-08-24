@@ -1,0 +1,22 @@
+.black{
+    background-color: black;
+    color: #ffffff;
+    margin: auto;
+    width: 40%;
+    /*padding: 30px;*/
+    text-align: center;
+}
+.order-message{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+hr{
+    width: 60%;
+    margin: auto;
+    height: 8px;
+    background: black;
+    border: solid 2px;
+    border-radius: 12px;
+    text-align: center;
+}
